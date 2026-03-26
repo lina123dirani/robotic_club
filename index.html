@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hamak Robotics Club</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Cairo', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(180deg, #2b0a0a, #120404);
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    /* ===== Cover ===== */
+    .cover {
+      height: 220px;
+      background: url('cover.jpg') center/cover no-repeat;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        rgba(0,0,0,0.2),
+        rgba(43, 10, 10, 0.8)
+      );
+    }
+
+    /* ===== Container ===== */
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      transform: translateY(-70px);
+      animation: fadeUp 1s ease;
+    }
+
+    /* ===== Logo ===== */
+    .logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 5px solid #3b0d0d;
+      object-fit: cover;
+      background: white;
+      box-shadow: 0 0 20px rgba(216, 138, 43, 0.4);
+      animation: pop 0.8s ease;
+    }
+
+    /* ===== Title ===== */
+    h1 {
+      margin-top: 15px;
+      font-size: 28px;
+      font-weight: 700;
+      color: #f2d2a9;
+      animation: fadeUp 1.2s ease;
+    }
+
+    /* ===== Description ===== */
+    .desc {
+      margin-top: 10px;
+      font-size: 15px;
+      color: #f2d2a9;
+      line-height: 1.7;
+      animation: fadeUp 1.4s ease;
+    }
+
+    .links {
+      margin-top: 25px;
+    }
+
+    /* ===== Buttons ===== */
+    .btn {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 16px;
+      margin-bottom: 14px;
+      border-radius: 14px;
+      text-decoration: none;
+      color: white;
+
+      background: linear-gradient(135deg, #7a3e1d, #3b0d0d);
+      border: 1px solid rgba(255, 200, 120, 0.2);
+
+      transition: 0.3s;
+      transform: translateY(20px);
+      opacity: 0;
+      animation: fadeUp 0.6s ease forwards;
+    }
+
+    /* delay لكل زر */
+    .btn:nth-child(1) { animation-delay: 0.2s; }
+    .btn:nth-child(2) { animation-delay: 0.4s; }
+    .btn:nth-child(3) { animation-delay: 0.6s; }
+    .btn:nth-child(4) { animation-delay: 0.8s; }
+    .btn:nth-child(5) { animation-delay: 1s; }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #d88a2b, #7a3e1d);
+      box-shadow: 0 0 15px rgba(216, 138, 43, 0.6);
+    }
+
+    /* ===== Icon ===== */
+    .icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: #fff3e0;
+      padding: 6px;
+    }
+
+    .text {
+      text-align: right;
+    }
+
+    .text h3 {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .text p {
+      font-size: 13px;
+      color: #f2d2a9;
+      margin-top: 4px;
+    }
+
+    .footer {
+      margin-top: 25px;
+      font-size: 12px;
+      color: #bba07a;
+      animation: fadeUp 1.6s ease;
+    }
+
+    /* ===== Animations ===== */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pop {
+      from {
+        transform: scale(0.7);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    /* ===== Mobile ===== */
+    @media (max-width: 500px) {
+      .logo {
+        width: 100px;
+        height: 100px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="cover">
+    <div class="overlay"></div>
+  </div>
+
+  <div class="container">
+
+    <img src="logo.jpg" class="logo" />
+
+    <h1>Hamak Robotics Club</h1>
+
+    <p class="desc">
+      فريق تطوعي جامعي يهدف لنشر المعرفة في مجال الروبوتيك والذكاء الصناعي
+    </p>
+
+    <div class="links">
+
+      <a class="btn" href="https://www.facebook.com/share/18V6xi5Sxb/" target="_blank">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/20/20837.png">
+        <div class="text">
+          <h3>FACEBOOK</h3>
+          <p>آخر الأخبار والنشاطات</p>
+        </div>
+      </a>
+
+      <a class="btn" href="#" target="_blank">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+        <div class="text">
+          <h3>INSTAGRAM</h3>
+          <p>محتوى مميز وصور</p>
+        </div>
+      </a>
+
+      <a class="btn" href="#" target="_blank">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/61/61109.png">
+        <div class="text">
+          <h3>LINKEDIN</h3>
+          <p>الحضور المهني</p>
+        </div>
+      </a>
+
+      <a class="btn" href="https://t.me/HamakAIClub" target="_blank">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
+        <div class="text">
+          <h3>TELEGRAM CHANNEL</h3>
+          <p>الإعلانات والمستجدات</p>
+        </div>
+      </a>
+
+      <a class="btn" href="#" target="_blank">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
+        <div class="text">
+          <h3>YOUTUBE</h3>
+          <p>الفيديوهات</p>
+        </div>
+      </a>
+
+    </div>
+
+<div class="footer">
+  Powered by Hamak Robotics Club
+</div>
+
+  </div>
+
+</body>
+</html>
