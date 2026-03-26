@@ -17,6 +17,7 @@
     }
 
     body {
+      margin: 0; /* 🔥 مهم */
       background: linear-gradient(180deg, #0a1f2e, #021018);
       color: white;
       text-align: center;
@@ -27,6 +28,8 @@
       height: 220px;
       background: url('cover.jpg') center/cover no-repeat;
       position: relative;
+      overflow: hidden; /* 🔥 حل المشكلة */
+      margin-bottom: -2px; /* 🔥 يقتل أي خط */
     }
 
     .overlay {
@@ -42,7 +45,7 @@
       max-width: 600px;
       margin: auto;
       padding: 20px;
-      transform: translateY(-70px);
+      transform: translateY(-60px); /* ✨ أخف من قبل */
       animation: fadeUp 1s ease;
     }
 
@@ -183,63 +186,61 @@
 
   <div class="container">
 
-```
-<img src="logo.jpg" class="logo" />
+    <img src="logo.jpg" class="logo" />
 
-<h1>Hamak Robotics Club</h1>
+    <h1>Hamak Robotics Club</h1>
 
-<p class="desc">
-  فريق تطوعي جامعي يهدف لنشر المعرفة في مجال الروبوتيك والذكاء الصناعي
-</p>
+    <p class="desc">
+      فريق تطوعي جامعي يهدف لنشر المعرفة في مجال الروبوتيك والذكاء الصناعي
+    </p>
 
-<div class="links">
+    <div class="links">
 
-  <a class="btn" href="https://www.facebook.com/share/18V6xi5Sxb/" target="_blank">
-    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/20/20837.png">
-    <div class="text">
-      <h3>FACEBOOK</h3>
-      <p>آخر الأخبار والنشاطات</p>
+      <a class="btn" href="https://www.facebook.com/share/18V6xi5Sxb/" target="_blank">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/20/20837.png">
+        <div class="text">
+          <h3>FACEBOOK</h3>
+          <p>آخر الأخبار والنشاطات</p>
+        </div>
+      </a>
+
+      <a class="btn" href="#" target="_blank">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+        <div class="text">
+          <h3>INSTAGRAM</h3>
+          <p>محتوى مميز وصور</p>
+        </div>
+      </a>
+
+      <a class="btn" href="#" target="_blank">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/61/61109.png">
+        <div class="text">
+          <h3>LINKEDIN</h3>
+          <p>الحضور المهني</p>
+        </div>
+      </a>
+
+      <a class="btn" href="https://t.me/HamakAIClub" target="_blank">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
+        <div class="text">
+          <h3>TELEGRAM CHANNEL</h3>
+          <p>الإعلانات والمستجدات</p>
+        </div>
+      </a>
+
+      <a class="btn" href="https://www.youtube.com/@HamakAiRoboticsClub" target="_blank">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
+        <div class="text">
+          <h3>YOUTUBE</h3>
+          <p>الفيديوهات</p>
+        </div>
+      </a>
+
     </div>
-  </a>
 
-  <a class="btn" href="#" target="_blank">
-    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
-    <div class="text">
-      <h3>INSTAGRAM</h3>
-      <p>محتوى مميز وصور</p>
+    <div class="footer">
+      Powered by Hamak Robotics Club
     </div>
-  </a>
-
-  <a class="btn" href="#" target="_blank">
-    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/61/61109.png">
-    <div class="text">
-      <h3>LINKEDIN</h3>
-      <p>الحضور المهني</p>
-    </div>
-  </a>
-
-  <a class="btn" href="https://t.me/HamakAIClub" target="_blank">
-    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
-    <div class="text">
-      <h3>TELEGRAM CHANNEL</h3>
-      <p>الإعلانات والمستجدات</p>
-    </div>
-  </a>
-
-  <a class="btn" href="#" target="_blank">
-    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
-    <div class="text">
-      <h3>YOUTUBE</h3>
-      <p>الفيديوهات</p>
-    </div>
-  </a>
-
-</div>
-
-<div class="footer">
-  Powered by Hamak Robotics Club
-</div>
-```
 
   </div>
 
